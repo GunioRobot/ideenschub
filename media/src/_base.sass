@@ -1,0 +1,16 @@
+=two-column(!header, !content, !sidenav, !footer)
+  #{!header}, #{!footer}
+    +column(24, true)
+  #{!content}
+    +column(14)
+  #{!sidenav}
+    +column(10, true)
+
+=four-column(!header, !one, !two, !three, !four, !footer)
+  #{!header}, #{!footer}
+    background-color: grey
+    +column(24, true)
+  #{!one}, #{!two}, #{!three}
+    +column(6)
+  #{!four}
+    +column(6, true)

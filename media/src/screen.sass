@@ -1,0 +1,35 @@
+@import base.sass
+@import blueprint.sass
+@import blueprint/modules/scaffolding.sass
+@import compass/reset.sass
+@import compass/utilities.sass
+
++blueprint-typography
++blueprint-debug
++blueprint-interaction
++blueprint-utilities
++blueprint-form
+// Remove the scaffolding when you're ready to start doing visual design.
+// Or leave it in if you're happy with how blueprint looks out-of-the-box
+body.blueprint
+  +blueprint-scaffolding
+  .container
+    +container
+
+body.two-column
+  +two-column("#header" , "#content" , "#sidenav" , "#footer")
+#header
+  position: relative
+  h1
+    +replace-text("weblog.jpg")
+    width: 99px
+    height: 65px
+  #links
+    +horizontal-list
+    position: absolute
+    right: 0
+    top: 0
+
+#header, #footer, #sidenav
+  a
+    +hover-link
