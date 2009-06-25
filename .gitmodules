@@ -28,3 +28,6 @@
 [submodule "modules/kohaml"]
   path = modules/kohaml
   url = git://github.com/justinhernandez/kohaml.git  	
+[submodule "media/src/compass"]
+	path = media/src/compass
+	url = git://github.com/chriseppstein/compass.git
