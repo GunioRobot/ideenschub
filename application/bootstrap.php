@@ -47,8 +47,8 @@ set_error_handler(array('Kohana', 'error_handler'));
  * - caching:    enable or disable internal caching
  */
 Kohana::init(array(
-  'charset' => 'utf-8', 
-  'base_url' => '', 
+  'charset' => 'utf-8',
+  'base_url' => '',
   'index_file' => FALSE
 ));
 
